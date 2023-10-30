@@ -1,0 +1,48 @@
+body {
+	background-color: #df88f7
+;
+}
+h1 {
+	color: white;
+}
+h2 {
+	color: white;
+}
+.top-header {
+	background-color: red;
+}
+.top-header-title{
+	#margin: 0;
+	padding: 0;
+	
+}
+.manga-title {
+	margin: 0;
+	padding: 0;
+	color: white;
+	text-align: center;
+	pointer-events: none;
+}
+.manga-thumbnail{
+	width: 100%;
+	 padding-top: 100%;	
+	 position: relative;
+	margin: 0;
+	padding: 0;
+	pointer-events: none;
+	user-select: none;
+}
+.flex-container {
+	background-color: pink;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: center;
+}
+.manga-item {
+	background-color: #ff008c;
+	margin: 0px;
+	padding: 0px;
+	cursor: pointer;
+}

@@ -16,6 +16,41 @@ h2 {
 	padding: 0;
 	
 }
+div.genre-selector{
+  overflow: auto;
+  white-space: nowrap;
+  background-color: black;
+}
+.toggle-button{
+	background-color: pink;
+	#color: white;
+	cursor: pointer;
+	 display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+.genre-tag{
+	background-color: gray;
+	#color: white;
+	cursor: pointer;
+	 display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+a.genre-title {
+	margin: 0;
+	padding: 0;
+	color: white;
+	text-align: center;
+	pointer-events: none;
+	user-select: none;
+}
+
 .manga-title {
 	margin: 0;
 	padding: 0;
@@ -24,9 +59,10 @@ h2 {
 	pointer-events: none;
 }
 .manga-thumbnail{
-	width: 100%;
-	 padding-top: 100%;	
-	 position: relative;
+	#width: 100%;
+	width:500px;
+	height:400px;
+	position: relative;
 	margin: 0;
 	padding: 0;
 	pointer-events: none;
@@ -39,6 +75,9 @@ h2 {
 	flex-wrap: wrap;
 	gap: 10px;
 	justify-content: center;
+	flex: 1 1 auto;
+    overflow-y: auto;
+    min-height: 0px;
 }
 .manga-item {
 	background-color: #ff008c;

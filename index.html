@@ -6,11 +6,39 @@
 	<link rel="stylesheet" href="style.css">
 </header>
 <body>
-<div class = "top-header">
-	<h1 class = "top-header-title">Reccomendation Website</h1>
-</div>
-<div class="flex-container" id = "mangaReccomendationFlexContainer">
-</div>
+	<div class = "top-header">
+		<h1 class = "top-header-title">Reccomendation Website</h1>
+	</div>
+	
+	<div class ="toggle-button" onclick="toggleManga(this)">
+		<h1 class="genre-title">Show Manga</h1>
+	</div>
+	<div class ="toggle-button" onclick="toggleAnime(this)">
+		<h1 class="genre-title">Show Anime</h1>
+	</div>
+	
+	<h1 id = "genereMangaTitle">Genres</h1>
+
+	<div class = "genre-selector" id = "mangaGenrePickerFlexContainer">
+	
+		<!--><input type="button" class="genre-tag">test</input> -->
+		
+	</div>
+	<!--
+	<h1 id = "genereAnimeTitle">Genres Anime</h1>
+
+	<div class = "genre-selector" id = "animeGenrePickerFlexContainer"> 
+		
+	</div>
+	-->
+
+	<h1>Search</h1>
+	<input type="text" id="searchbar"name="Search"></input>
+	<h1>Results</h1>
+
+	<div class="flex-container" id = "mangaReccomendationFlexContainer"></div>
+
 </body>
+
 <script src="index.js"></script>
 </html>

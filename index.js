@@ -206,7 +206,7 @@ function getAnime()
 			i++;
 		}
 	}
-	baseLink = "https://api.jikan.moe/v4/anime?page=1" + ((genreString.length>0) ? "genres=" + genreString : "") + (lastsearch.length > 2 ? "q=\"" + lastsearch + "\"" : "")
+	baseLink = "https://api.jikan.moe/v4/anime?" + ((genreString.length>0) ? "genres=" + genreString : "") + (lastsearch.length > 2 ? "q=\"" + lastsearch + "\"" : "")
 	console.log(baseLink)
 	httpGetAsync(baseLink, refreshAnime)
 }
@@ -228,7 +228,7 @@ function getManga()
 			i++;
 		}
 	}
-	baseLink = "https://api.jikan.moe/v4/manga?page=1" + ((genreString.length>0) ? "genres=" + genreString : "") + (lastsearch.length > 2 ? "q=\"" + lastsearch + "\"" : "")
+	baseLink = "https://api.jikan.moe/v4/manga?" + ((genreString.length>0) ? "genres=" + genreString : "") + (lastsearch.length > 2 ? "q=\"" + lastsearch + "\"" : "")
 	console.log(baseLink)
 	httpGetAsync(baseLink, refreshManga)
 }

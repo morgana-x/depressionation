@@ -50,6 +50,7 @@ function getInfoMangaFromItem(e)
 {
 	console.log(e.children[0].getAttribute("href"))
 	console.log("click " + e.children[0].textContent)
+	window.open(e.children[0].getAttribute("href"), "_blank")
 }
 function updateReccomendationsAnime()
 {
